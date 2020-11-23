@@ -34,14 +34,14 @@ export default class App extends Component {
       return !robots.length ? (
          <h1 className="tc">Loading...</h1>
       ) : (
-         <div className="tc">
+         <div className="tc mb5">
             <h1 className="f1">RoboFriends</h1>
             <SearchBox searchChange={this.onSearchChange} />
-            <Scroll>
+            {/* <Scroll> */}
                <ErrorBoundry>
                   <CardList robots={filteredRobots} />
                </ErrorBoundry>
-            </Scroll>
+            {/* </Scroll> */}
          </div>
       );
    }
